@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('https://www.nba.com/assets/nba_social/og/standings.jpg');
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.matches {
+    background: white;
+    width: 70%;
+    height: 500px;
+    box-shadow: 0 0 14px #000;
+    border-radius: 20px;
+}
+
+.match {
+    color: white;
+    width: 100%;
+    height: calc(100% / 4);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid black;
+    background: #b20f1e;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #041e4c, #b20f1e);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left,#041e4c, #b20f1e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    cursor: pointer;
+    transition: all 0.8s ease-in-out;
+}
+
+.match:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px #fff;
+    background: #b20f1e;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #041e4c, #b20f1e);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top,#041e4c, #b20f1e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-radius: 10px;
+}
+
+.home,
+.score-home,
+.score-away,
+.away {
+    width: calc(100% / 4);
+}
+
+.score-home,
+.score-away {
+    text-align: center;
+}
+
+.away {
+    text-align: right;
+}
